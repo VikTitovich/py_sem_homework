@@ -6,7 +6,7 @@
 
 
 m, n, k = int(input()), int(input()), int(input())
-if k % m == 0 or k % n == 0:
+if k < m * n and k % m == 0 or k % n == 0:
     print(f"{m} {n} {k} -> Yes")
 else:
     print(f"{m} {n} {k} -> No")
